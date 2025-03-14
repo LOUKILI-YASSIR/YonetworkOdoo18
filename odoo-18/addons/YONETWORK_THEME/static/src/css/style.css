@@ -1,0 +1,118 @@
+:root {
+  /* Palette de couleurs verte */
+  --yo-primary: #3CB371;   /* Vert principal */
+  --yo-secondary: #2E8B57; /* Vert secondaire */
+  --yo-text-light: #ffffff;
+  --yo-text-dark: #333333;
+}
+
+/* ===== Barre de navigation (Navbar) ===== */
+.o_main_navbar {
+  background-color: var(--yo-secondary) !important; /* Utilisation de la couleur secondaire */
+  border-bottom: 2px solid var(--yo-secondary);
+}
+
+.o_main_navbar .navbar-brand img {
+  max-height: 40px; /* Ajuste la hauteur du logo */
+  margin-right: 10px;
+}
+
+.o_main_navbar .navbar-brand {
+  color: var(--yo-text-light) !important;
+}
+
+.o_main_navbar .navbar-nav > li > a {
+  color: var(--yo-text-light) !important;
+}
+
+/* ===== Carrés d'applications (App Tiles) ===== */
+.o_app_launcher_panel .o_app_tile {
+  background-color: var(--yo-secondary) !important;
+  color: var(--yo-text-light) !important;
+  border: 1px solid var(--yo-secondary);
+  transition: transform 0.2s ease-in-out;
+}
+
+.o_app_launcher_panel .o_app_tile:hover {
+  transform: scale(1.03);
+  background-color: var(--yo-secondary) !important;
+  border-color: var(--yo-secondary);
+}
+
+/* ===== Boutons ===== */
+.btn-primary {
+  background-color: var(--yo-secondary) !important;
+  border-color: var(--yo-secondary) !important;
+  color: var(--yo-text-light) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--yo-secondary) !important;
+  border-color: var(--yo-secondary) !important;
+  color: var(--yo-text-light) !important;
+}
+
+/* ===== Tables ===== */
+.table > thead > tr > th {
+  background-color: var(--yo-secondary) !important;
+  color: var(--yo-text-light) !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9; /* Fond clair pour le contraste */
+}
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #ffffff;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: var(--yo-secondary) !important;
+  color: var(--yo-text-light) !important;
+}
+
+/* ===== Pied de page (Footer) ===== */
+.o_footer {
+  background-color: var(--yo-secondary);
+  color: var(--yo-text-light);
+  padding: 10px 20px;
+  text-align: center;
+  border-top: 2px solid var(--yo-secondary);
+}
+
+.o_footer a {
+  color: var(--yo-text-light);
+}
+
+/* ===== Personnalisation des boutons et liens du header ===== */
+
+/* Cible l'ensemble des liens du menu header */
+.o_main_navbar .navbar-nav li a {
+  color: var(--yo-text-light) !important;
+  padding: 10px 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+/* Survol et focus : changement de fond et maintien du texte clair */
+.o_main_navbar .navbar-nav li a:hover,
+.o_main_navbar .navbar-nav li a:focus {
+  background-color: var(--yo-secondary) !important;
+  color: var(--yo-text-light) !important;
+  border-radius: 4px;
+}
+
+/* Pour les menus déroulants, s'ils existent */
+.o_main_navbar .dropdown-menu a {
+  color: var(--yo-text-dark) !important;
+  padding: 8px 12px;
+}
+
+.o_main_navbar .dropdown-menu a:hover,
+.o_main_navbar .dropdown-menu a:focus {
+  background-color: var(--yo-secondary) !important;
+  color: var(--yo-text-light) !important;
+  border-radius: 4px;
+}
